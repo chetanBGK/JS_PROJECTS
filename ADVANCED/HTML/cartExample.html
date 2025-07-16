@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div id="buttons">
+        <button id="addToBag" onclick="addTobag()">Add to Bag</button>
+        <button id="wishList" onclick="wishList()">Move to wish List</button>
+        <button id="offer" onclick="offer()">1+1 Sale Offer</button>
+        <button id="clearCart" onclick="clearCart()">Clear Cart</button>
+    </div> -->
+
+ <div id="buttons">
+        <button id="addToBag" onclick="processOrder(1)">Add to Bag</button>
+        <button id="wishList" onclick="processOrder(-1)">Move to wish List</button>
+        <button id="offer" onclick="processOrder(2)">1+1 Sale Offer</button>
+        <button id="clearCart" onclick="processOrder(0)">Clear Cart</button>
+    </div> 
+  
+    <button onclick="changeStatus()">Display Status</button>
+    <div>
+        <h1 id="messageTag">Your cart has 0 items</h1>
+    </div>
+    
+    <script src="/ADVANCED/JS/cartExample.js"></script>
+</body>
+</html>
